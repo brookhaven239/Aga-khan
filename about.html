@@ -9,13 +9,144 @@
 
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        table{
+
+            border: black;
+        }
+     th,td,tr{
+         border: 2px solid black;
+         text-align: center; padding: 10px;
+         font-weight: bold;
+     }
+     .merge{
+         vertical-align: middle;
+     }
+
+
+
+
+
+    </style>
 
 </head>
 <body>
 
+
 <h1 class="text-center text-warning">About Aga khan Hospital</h1>
+
+ <a href="home.html" class="btn btn-primary">Home</a>
+  <a href="about.html" class="btn btn-outline-success">About us</a>
+<button class="btn btn-outline-danger">Contact</button>
+<a href="services.html" class="btn btn-outline-dark">Services</a>
+<button class="btn btn-outline-success">Register</button>
+<button class="btn btn-outline-secondary">Login</button>
+
 <p class="container-fluid"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium assumenda autem cum debitis delectus dolor eos facilis, impedit iste laborum neque nihil, numquam optio, perferendis quam qui voluptates. Aspernatur, vitae?</span><span>Adipisci aliquid, amet, dolore dolorem doloremque eveniet, explicabo harum illo incidunt iste magni maiores mollitia nam natus nihil numquam obcaecati officiis omnis possimus provident quae quam ratione reprehenderit sapiente ullam.</span><span>Amet blanditiis culpa distinctio, eaque esse eveniet ex harum, illo illum, incidunt perspiciatis placeat praesentium quia recusandae sed sit tempore temporibus. Culpa, et exercitationem molestiae necessitatibus nesciunt perspiciatis quaerat quo?</span></p>
 
+<img src="static/assets/img_1.png" alt="" class="rounded d-block mx-auto">
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A culpa incidunt inventore maxime nesciunt reiciendis saepe. Alias, consequuntur dolor doloribus est in quis repellendus, similique, sint tempore velit voluptate voluptatum!</span><span>Accusamus, beatae commodi, culpa ducimus et ex expedita illo incidunt laboriosam laborum libero maiores maxime molestias nobis non obcaecati odio omnis optio porro quisquam recusandae repudiandae similique soluta, tempora ullam.</span></p>
+<div class="d-flex bg-info m-5 p-5">
+  <img src="static/assets/background%20img2%20(copy).jpeg" alt="" class="me-3 rounded-circle">
+  <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto doloribus explicabo quae! Animi aperiam consequuntur debitis dicta dolores error expedita facere ipsam laborum, laudantium molestias mollitia, praesentium voluptates voluptatibus.</span><span>Ab accusamus aliquam asperiores assumenda, doloremque dolores est illo iure minima possimus sit temporibus voluptatem. Animi asperiores beatae consequatur dolor enim maiores minima mollitia non porro quasi quos repellendus, velit.</span><span>Culpa, eaque nesciunt. Aspernatur consequatur consequuntur dolore excepturi nemo optio quae quibusdam ratione. Beatae delectus, deserunt eos ex natus officiis quisquam ratione sit soluta vero vitae voluptas! Dicta, reiciendis, voluptatem?</span></p>
+  <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima numquam repellat similique vel? Dicta dignissimos facere maxime odio officia possimus sint veritatis, voluptate? Aliquid odio officia sit tenetur unde voluptatem!</span><span>Aliquam dignissimos dolor iste iusto modi quibusdam vel veniam. Ad consectetur delectus dolor, dolore earum maxime molestias nesciunt quia repellat vel. Accusamus ex fuga illo iste sapiente sit velit voluptatem!</span><span>Ab accusamus asperiores consequuntur, cumque debitis doloribus ducimus eius, eligendi eos error esse explicabo illum laudantium modi pariatur reiciendis ullam voluptates! Architecto dolor dolore eligendi id non quo rem totam!</span></p>
+</div>
+
+<h3 class="text-center">Patient information</h3>
+
+<table class="table table-dark table-striped table-hover table-bordered container " >
+
+  <tr>
+    <th>Id</th>
+    <th>patient Name</th>
+    <th>Monthly salary</th>
+    <th>Disease</th>
+  </tr>
+  <tr class="table-warning">
+    <td>55001</td>
+    <td>Duke</td>
+    <td>$250</td>
+    <td>Dengue</td>
+  </tr>
+  <tr>
+    <td>55002</td>
+    <td>Morris</td>
+    <td>$300</td>
+    <td>HIV</td>
+  </tr>
+  <tr class="table-danger">
+    <td>55003</td>
+    <td>sam</td>
+    <td>$180</td>
+    <td>Hepatiti</td>
+  </tr>
+   <tr>
+    <td>55004</td>
+    <td>Mike</td>
+    <td>$200</td>
+    <td>Cancer</td>
+  </tr>
+   <tr class="table-success">
+    <td>55005</td>
+    <td>David</td>
+    <td>$500</td>
+    <td>Ebola</td>
+  </tr>
+
+</table>
+
+<br><br><br>
+
+<!---rowspan and colspan--->
+<table class="container table table-bordered " >
+    <thead >
+
+    <tr>
+        <th><u>ID</u></th>
+        <th><u>Name</u></th>
+        <th><u>Subject</u></th>
+        <th><u>Marks</u></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td rowspan="3" class="merge">1</td>
+        <td rowspan="3" class="merge">David</td>
+
+        <td>Maths</td>
+        <td>80</td>
+    </tr>
+
+    <tr>
+        <td>physics</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Computers</td>
+        <td>70</td>
+    </tr>
+
+    <tr>
+
+        <td rowspan="3" class="merge">2</td>
+        <td rowspan="3" class="merge">Alex</td>
+
+        <td>Maths</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>physics</td>
+         <td>70</td>
+
+    </tr>
+    <tr>
+        <td>Computers</td>
+         <td>90</td>
+    </tr>
+
+    </tbody>
+    </tr>
+</table>
 
 
 
